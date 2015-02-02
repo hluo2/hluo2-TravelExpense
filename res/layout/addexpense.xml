@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/currencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amountspentText"
+        android:layout_below="@+id/amountspentText"
+        android:ems="10"
+        android:hint="Currency" />
+
+    <EditText
+        android:id="@+id/decribeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/currencyText"
+        android:layout_below="@+id/currencyText"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Description"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/dateText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/categoryText1"
+        android:layout_below="@+id/categoryText1"
+        android:ems="10"
+        android:hint="Date (DD/MM/Year)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/amountspentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateText1"
+        android:layout_below="@+id/dateText1"
+        android:ems="10"
+        android:hint="Amount Spent"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addbutton1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decribeText2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/decribeText2"
+        android:onClick="addexpenseaction"
+        android:text="Add Expense" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/categoryText1"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/categoryText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Category" />
+
+</RelativeLayout>

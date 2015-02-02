@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/addexpensebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expensebutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/expensebutton"
+        android:layout_marginTop="26dp"
+        android:onClick="goaddexpense"
+        android:text="Add Expense" />
+
+    <Button
+        android:id="@+id/expensebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/claimbutton"
+        android:layout_alignRight="@+id/claimbutton"
+        android:layout_below="@+id/addexpensebutton"
+        android:layout_marginTop="15dp"
+        android:onClick="goexpense"
+        android:text="ExpensesList" />
+
+    <Button
+        android:id="@+id/claimbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addclaimbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/addclaimbutton"
+        android:layout_marginBottom="21dp"
+        android:onClick="goclaim"
+        android:text="ClaimStatus" />
+
+    <Button
+        android:id="@+id/addclaimbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="goaddclaim"
+        android:text="Claim Expense" />
+
+</RelativeLayout>
